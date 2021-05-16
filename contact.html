@@ -3,85 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Travel Stories</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
+    <title>My Travel Stories</title>
   </head>
   <body>
     <header>
-      <!-- <figure> -->
-      <img src="images/desert.jpg" alt="aircraft" />
-      <!-- </figure> -->
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="stories.html">Stories</a>
-        <a href="contact.html">Reach Me</a>
+      <nav class="navbar navbar-expand-md navbar-light mx-3">
+        <div class="container-fluid p-0">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="stories.html">Stories</a>
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
       </nav>
       <section>
-        <h1>Lets connect</h1>
+        <div class="header-img--contact mb-4 position-relative">
+          <h1
+            class="
+              position-absolute
+              top-50
+              start-50
+              translate-middle
+              heading-title
+              fst-italic
+            "
+          >
+            Let's connect
+          </h1>
+        </div>
         <blockquote>
-          "Life is Either a daring adventure or nothing at all"
+          <h4 class="fst-italic text-center mt-5">
+            "Life is Either a daring adventure or nothing at all"
+          </h4>
         </blockquote>
       </section>
     </header>
 
-    <main class="container">
-      <form action="#">
-        <fieldset>
-          <legend>Your Details</legend>
-          <label for="fname">
-            First Name
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-              required
-            />
-          </label>
-          <!-- <br /><br /> -->
-          <label for="lname">
-            Last Name
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-              required
-            />
-          </label>
-          <!-- <br /><br /> -->
-
-          <label for="country">
-            Country
-            <select id="country" name="country">
-              <option value="Australia">Australia</option>
-              <option value="Canada">Canada</option>
-              <option value="Usa">USA</option>
-            </select>
-          </label>
-        </fieldset>
-        <!-- <br /><br /> -->
-        <label for="how"
-          >How did you hear about me?
-          <input type="radio" id="website" name="how" checked /> Website
-          <input type="radio" id="facebook" name="how" /> Facebook
-        </label>
-        <!-- <br /> -->
-        <label for="comment">
-          <p>Leave your comment here:</p>
-          <textarea
-            id="comment"
-            name="comment"
-            placeholder="Write something.."
-            cols="50"
-            rows="5"
-          ></textarea>
-        </label>
-        <!-- <br /><br /> -->
-        <input type="submit" value="Submit" />
-      </form>
+    <main class="container my-4">      
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <form action="#">
+            <div class="row g-3">
+              <div class="col-sm-12">
+                  <hr></hr>
+              </div>
+              <div class="col-sm-6">
+                <label for="fname" class="form-label">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fname"
+                  aria-describedby="firstNameInputBlock"
+                  required
+                  value
+                  placeholder
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="lname" class="form-label">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lname"
+                  aria-describedby="lastNameInputBlock"
+                  required
+                  value
+                  placeholder
+                />
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <label for="country" class="form-label">
+                    Country
+                    <select
+                      class="form-select"
+                      id="country"
+                      name="country"
+                      aria-label="contry select options"
+                      required
+                    >
+                      <option value>Choose...</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Usa">USA</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <label class="form-label">How did you hear about me?</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="website"
+                    name="how"
+                    checked
+                  />
+                  <label class="form-check-label" for="how">Website</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="facebook"
+                    name="how"
+                    checked
+                  />
+                  <label class="form-check-label" for="how">Facebook</label>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <label for="comment form-label">Leave your comment here:</label>                
+                  <textarea class="form-control" placeholder="Leave a comment here" id="comment" name="comment" style="height: 100px" ></textarea> 
+              </div>
+            <div class="row px-0 g-3">
+              <div class="col px-0 d-flex justify-content-end">
+                <input class="btn btn-primary" type="submit" value="Submit" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>      
     </main>
     <!-- <br /> -->
-    <footer>Copyright 2020. All rights revserved. Made with &#10084;</footer>
+    <footer class="text-center py-5 bg-dark text-white mx-3 my-3">
+      Copyright 2020. All rights revserved. Made with &#10084;
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

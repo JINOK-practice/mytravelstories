@@ -1,168 +1,106 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
 }
 
-header {
-  text-align: center;
+.header-img--main {
+  height: 55vh;
+  background-image: linear-gradient(
+      100deg,
+      rgb(126, 213, 111, 0.9) 20%,
+      rgb(40, 180, 133, 0.8) 50%,
+      rgb(40, 180, 133, 0.1) 80%
+    ),
+    url(../images/aircraft.jpg);
+
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  margin: 0rem 1rem 1rem 1rem;
 }
 
-header > img {
-  width: 100%;
-  height: 500px;
+.header-img--stories {
+  height: 55vh;
+  background-image: linear-gradient(
+      140deg,
+      rgb(152, 103, 240, 0.7) 10%,
+      rgb(237, 78, 80, 0.6) 45%,
+      rgb(237, 78, 80, 0.1) 80%
+    ),
+    url(../images/ribblehead-viaduct.jpg);
+
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  margin: 0rem 1rem 1rem 1rem;
 }
 
-nav {
-  background-color: rgb(206, 85, 85);
-}
+.header-img--contact {
+  height: 55vh;
+  background-image: linear-gradient(
+      140deg,
+      rgba(255, 229, 127, 0.7) 10%,
+      rgba(255, 113, 112, 0.6) 45%,
+      rgb(237, 78, 80, 0.1) 80%
+    ),
+    url(../images/ribblehead-viaduct.jpg);
 
-nav a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  font-size: 1.5em;
-  padding: 0 16px;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  margin: 0rem 1rem 1rem 1rem;
 }
-
-nav a:hover {
-  background-color: #77bdbf;
-  color: #292525;
-}
-
-h1 {
-  font-size: 3em;
-  color: hsl(0, 2%, 32%);
-  padding: 10px;
-}
-
-blockquote {
-  font-size: 1.5em;
-  color: hsla(315, 28%, 23%, 0.5);
-  padding: 10px;
-}
-
-.homecontent {
-  width: 70%;
-  font-size: 1.2em;
-  margin: 20px auto;
-  text-align: justify;
-}
-
-.listPlaces {
-  width: 70%;
-  margin: auto;
-  padding: 20px;
-}
-
-/* Table */
-table {
-  border-collapse: collapse;
-}
-th {
-  background-color: #f2f2f2;
-}
-th,
-tr,
-td {
-  padding: 20px;
-  border: 1px solid black;
-}
-legend {
-  font-weight: bold;
-}
-
-/* Stories Page */
-/* Using display for layout */
-.stories {
-  width: 940px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.stories .col {
-  display: inline-block;
-  margin: 20px auto;
-}
-
-.stories > article {
-  max-width: 300px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.col > img {
-  width: 100%;
-  opacity: 0.8;
-}
-
-.col p,
-.col h3 {
-  color: #803376;
-  padding: 2px;
-  margin: 5px;
-}
-
-/* Form */
-
-.container {
-  width: 50%;
-  margin: auto;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-  font-size: 1.5em;
-}
-
-label {
-  display: block;
-  margin: 10px 0;
-}
-
-fieldset {
-  border: none;
-}
-
-legend {
-  display: none;
-  font-weight: bold;
-}
-
-input[type="text"],
-textarea,
-select {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-textarea {
-  height: 200px;
-}
-
-input[type="submit"] {
-  background-color: #4caf50;
+.heading-title {
   color: #fff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  display: block;
-  margin: auto;
+  font-size: 3.5rem;
 }
 
-input[type="submit"]:hover {
-  background-color: #45a049;
+.heading-main {
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  margin: 15px 0;
+.title-main {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title-sub {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+}
+
+main {
+  font-size: 1.15rem;
+}
+
+.section-intro,
+.paragraph {
+  max-width: 75%;
+  margin-bottom: 5rem;
+}
+
+.section-info {
+  background-color: #f7f7f7;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-img--main,
+  .header-img--stories,
+  .header-img--contact {
+    height: 45vh;
+    margin: 0rem 1rem 1rem 1rem;
+  }
+
+  .heading-title {
+    font-size: 2.5rem;
+  }
 }

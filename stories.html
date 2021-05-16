@@ -3,88 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
     <title>My Travel Stories</title>
   </head>
   <body>
     <header>
-      <img src="images/ribblehead-viaduct.jpg" alt="aircraft" />
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="stories.html">Stories</a>
-        <a href="contact.html">Reach Me</a>
+      <nav class="navbar navbar-expand-md navbar-light mx-3">
+        <div class="container-fluid p-0">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" href="stories.html">Stories</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
       </nav>
-      <section>
-        <h1>My Travel Stories</h1>
+      <section >
+        <div class="header-img--stories mb-4 position-relative">
+          <h1
+            class="
+              position-absolute
+              top-50
+              start-50
+              translate-middle
+              heading-title
+              fst-italic
+            "
+          >
+            My Travel Stories
+          </h1>
+        </div>
         <blockquote>
-          "Life is Either a daring adventure or nothing at all"
+          <h4 class="fst-italic text-center pt-2 mt-5">
+            "Life is Either a daring adventure or nothing at all"
+          </h4>
         </blockquote>
       </section>
     </header>
 
-    <main class="stories">
-      <article class="col">
-        <img src="images/singapore.jpg" alt="Singapore" />
-        <h3>Singapore</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-          ducimus maxime numquam facilis minima iusto cumque molestias natus
-          voluptatum, voluptate distinctio! Et voluptatibus perferendis dolore
-          corporis facere, officia reiciendis nesciunt.
-        </p>
-      </article>
-      <article class="col">
-        <img src="images/singapore.jpg" alt="Singapore" />
-        <h3>Singapore</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-          ducimus maxime numquam facilis minima iusto cumque molestias natus
-          voluptatum, voluptate distinctio! Et voluptatibus perferendis dolore
-          corporis facere, officia reiciendis nesciunt.
-        </p>
-      </article>
-      <article class="col">
-        <img src="images/singapore.jpg" alt="Singapore" />
-        <h3>Singapore</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-          ducimus maxime numquam facilis minima iusto cumque molestias natus
-          voluptatum, voluptate distinctio! Et voluptatibus perferendis dolore
-          corporis facere, officia reiciendis nesciunt.
-        </p>
-      </article>
+    <main class="stories container">
+      <div class="row py-4">
+        <article class=" col-lg-4 col-md-6  p-3 ">
+          <div class="card shadow-sm">
+            <img class="img-fluid" src="images/singapore.jpg" alt="Singapore" />
+            <div class="card-body">
+              <h3>Singapore</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                ducimus maxime numquam facilis minima iusto cumque molestias natus
+                voluptatum, voluptate distinctio! Et voluptatibus perferendis dolore
+                corporis facere, officia reiciendis nesciunt.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class=" col-lg-4 col-md-6 p-3 ">
+          <div class="card shadow-sm">
+            <img class="img-fluid" src="images/singapore.jpg" alt="Singapore" />
+            <div class="card-body">
+              <h3>Singapore</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                ducimus maxime numquam facilis minima iusto cumque molestias natus
+                voluptatum, voluptate distinctio! Et voluptatibus perferendis dolore
+                corporis facere, officia reiciendis nesciunt.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class=" col-lg-4 col-md-6  p-3 ">
+          <div class="card shadow-sm">
+            <img class="img-fluid" src="images/singapore.jpg" alt="Singapore" />
+            <div class="card-body">
+              <h3>Singapore</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                ducimus maxime numquam facilis minima iusto cumque molestias natus
+                voluptatum, voluptate distinctio! Et voluptatibus perferendis dolore
+                corporis facere, officia reiciendis nesciunt.
+              </p>
+            </div>
+          </div>
+        </article>    
+        <article class=" col-lg-4 col-md-6  p-3 ">
+          <div class="card shadow-sm">
+            <img class="img-fluid" src="images/singapore.jpg" alt="Singapore" />
+            <div class="card-body">
+              <h3>Singapore</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                ducimus maxime numquam facilis minima iusto cumque molestias natus
+                voluptatum, voluptate distinctio! Et voluptatibus perferendis dolore
+                corporis facere, officia reiciendis nesciunt.
+              </p>
+            </div>
+        </article>
 
-      <article class="col">
-        <img src="images/singapore.jpg" alt="Singapore" />
-        <h3>Singapore</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-          ducimus maxime numquam facilis minima iusto cumque molestias natus
-          voluptatum, voluptate distinctio! Et voluptatibus perferendis dolore
-          corporis facere, officia reiciendis nesciunt.
-        </p>
-      </article>
-      <article class="col">
-        <img src="images/singapore.jpg" alt="Singapore" />
-        <h3>Singapore</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-          ducimus maxime numquam facilis minima iusto cumque molestias natus
-          voluptatum, voluptate distinctio! Et voluptatibus perferendis dolore
-          corporis facere, officia reiciendis nesciunt.
-        </p>
-      </article>
-      <article class="col">
-        <img src="images/singapore.jpg" alt="Singapore" />
-        <h3>Singapore</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-          ducimus maxime numquam facilis minima iusto cumque molestias natus
-          voluptatum, voluptate distinctio! Et voluptatibus perferendis dolore
-          corporis facere, officia reiciendis nesciunt.
-        </p>
-      </article>
+        <article class=" col-lg-4 col-md-6  p-3 ">
+          <div class="card shadow-sm">
+            <img class="img-fluid" src="images/singapore.jpg" alt="Singapore" />
+            <div class="card-body">
+              <h3>Singapore</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                ducimus maxime numquam facilis minima iusto cumque molestias natus
+                voluptatum, voluptate distinctio! Et voluptatibus perferendis dolore
+                corporis facere, officia reiciendis nesciunt.
+              </p>
+            </div>
+          </div>          
+        </article>
+        <article class=" col-lg-4 col-md-6 p-3 ">
+          <div class="card shadow-sm">
+            <img class="img-fluid" src="images/singapore.jpg" alt="Singapore" />
+            <div class="card-body">
+              <h3>Singapore</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                ducimus maxime numquam facilis minima iusto cumque molestias natus
+                voluptatum, voluptate distinctio! Et voluptatibus perferendis dolore
+                corporis facere, officia reiciendis nesciunt.
+              </p>
+            </div>            
+          </div>          
+        </article>
+      </div>
     </main>
-    <footer>Copyright 2020. All rights reserved. Made with &#10084;</footer>
+    <footer class="text-center py-5 bg-dark text-white mx-3 my-3">
+      Copyright 2020. All rights revserved. Made with &#10084;
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

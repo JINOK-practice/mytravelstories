@@ -4,110 +4,171 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Travel Stories</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
     <header>
-      <!-- <figure> -->
-      <img src="images/aircraft.jpg" alt="aircraft" />
-      <!-- </figure> -->
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="stories.html">Stories</a>
-        <a href="contact.html">Reach Me</a>
+      <nav class="navbar navbar-expand-md navbar-light mx-3">
+        <div class="container-fluid p-0">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="stories.html">Stories</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
       </nav>
-      <section>
-        <h1>Welcome</h1>
-        <blockquote>
-          "Life is Either a daring adventure or nothing at all"
+      <div class="row header-img--main mb-4">
+        <h1 class="heading-title fst-italic">
+          <span class="title-main">" MY TRAVEL</span>
+          <span class="title-sub">STORIES "</span>
+        </h1>
+      </div>
+      <div class="section-intro p-3 my-2 mx-auto">
+        <h1 class="heading-main mb-2">Welcome</h1>
+        <blockquote class="mb-0">
+          <h5 class="fst-italic">
+            "Life is Either a daring adventure or nothing at all"
+          </h5>
         </blockquote>
-      </section>
+      </div>
     </header>
-
     <main>
-      <p class="homecontent">
-        2020 has come, maybe not with a bang as a lot of us may have hoped, but
-        the world goes on and as such I have decided to resume my travel next
-        year. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
-        cumque ex atque iusto laboriosam porro, cum aliquid esse, est corporis
-        dolorem voluptatem et fuga corrupti quo harum quidem placeat officiis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam
-        ipsam ratione mollitia dolores eaque reiciendis, odit recusandae ab
-        atque distinctio ducimus rerum. Quidem impedit inventore modi autem
-        temporibus expedita?
-      </p>
-      <p class="homecontent">Here is a list of places I have visited:</p>
-      <ul class="listPlaces">
-        <li>Singapore</li>
-        <li>France</li>
-        <li>Germany</li>
-        <li>Italy</li>
-      </ul>
-      <p class="homecontent">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
-        expedita harum aperiam fugiat, dolor quos exercitationem pariatur
-        deleniti ea, nam optio incidunt minima similique reiciendis omnis
-        sapiente at est mollitia. Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Explicabo expedita harum aperiam fugiat, dolor quos
-        exercitationem pariatur deleniti ea, nam optio incidunt minima similique
-        reiciendis omnis sapiente at est mollitia. Lorem ipsum dolor sit amet
-        consectetur, adipisicing elit. Explicabo expedita harum aperiam fugiat,
-        dolor quos exercitationem pariatur deleniti ea, nam optio incidunt
-        minima similique reiciendis omnis sapiente at est mollitia.
-      </p>
-      <p class="homecontent">
-        The table bellow shows my expenses by destination and accomodation:
-      </p>
-      <table class="homecontent">
-        <thead>
-          <tr>
-            <th colspan="4">
-              <h2>Hotel Expenses</h2>
-            </th>
-          </tr>
-          <tr>
-            <th scope="col">
-              <h3>Destination</h3>
-            </th>
-            <th scope="col">
-              <h3>Hotel</h3>
-            </th>
-            <th scope="col">
-              <h3>Nights</h3>
-            </th>
-            <th scope="col">
-              <h3>Cost</h3>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Singapore</th>
-            <td rowspan="2">Ibis Hotel</td>
-            <td>10</td>
-            <td>$2230</td>
-          </tr>
-          <tr>
-            <th scope="row">France</th>
-            <td>20</td>
-            <td>$2680</td>
-          </tr>
-          <tr>
-            <th scope="row">Italy</th>
-            <td>Global Resort</td>
-            <td rowspan="2">22</td>
-            <td>$3568</td>
-          </tr>
-          <tr>
-            <th scope="row">Germany</th>
-            <td>Cheese Cake Resort</td>
-            <td>$3568</td>
-          </tr>
-        </tbody>
-      </table>
+      <section class="section-main p-3 mx-3">
+        <div class="paragraph my-2 mx-auto">
+          <p>
+            2020 has come, maybe not with a bang as a lot of us may have hoped,
+            but the world goes on and as such I have decided to resume my travel
+            next year. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Nesciunt cumque ex atque iusto laboriosam porro, cum aliquid esse,
+            est corporis dolorem voluptatem et fuga corrupti quo harum quidem
+            placeat officiis. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Error quibusdam ipsam ratione mollitia dolores eaque
+            reiciendis, odit recusandae ab atque distinctio ducimus rerum.
+            Quidem impedit inventore modi autem temporibus expedita?
+          </p>
+          <p class="homecontent">Here is a list of places I have visited:</p>
+          <ul class="listPlaces">
+            <li>Singapore</li>
+            <li>France</li>
+            <li>Germany</li>
+            <li>Italy</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-info p-3 mx-3">
+        <div class="paragraph paragraph--1 my-2 mx-auto">
+          <p class="homecontent py-3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
+            expedita harum aperiam fugiat, dolor quos exercitationem pariatur
+            deleniti ea, nam optio incidunt minima similique reiciendis omnis
+            sapiente at est mollitia. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Explicabo expedita harum aperiam fugiat, dolor
+            quos exercitationem pariatur deleniti ea, nam optio incidunt minima
+            similique reiciendis omnis sapiente at est mollitia. Lorem ipsum
+            dolor sit amet consectetur, adipisicing elit. Explicabo expedita
+            harum aperiam fugiat, dolor quos exercitationem pariatur deleniti
+            ea, nam optio incidunt minima similique reiciendis omnis sapiente at
+            est mollitia.
+          </p>
+          <p class="homecontent">
+            The table bellow shows my expenses by destination and accomodation:
+          </p>
+          <table
+            class="
+              homecontent
+              table table-bordered
+              border-secondary
+              table-light
+              text-center
+              mb-5
+            "
+          >
+            <thead class="table-dark">
+              <tr>
+                <th colspan="4" class="align-middle">
+                  <h4>Hotel Expenses</h4>
+                </th>
+              </tr>
+              <tr>
+                <th scope="col">
+                  <h5>Destination</h5>
+                </th>
+                <th scope="col">
+                  <h5>Hotel</h5>
+                </th>
+                <th scope="col">
+                  <h5>Nights</h5>
+                </th>
+                <th scope="col">
+                  <h5>Cost</h5>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Singapore</th>
+                <td rowspan="2" class="align-middle">Ibis Hotel</td>
+                <td>10</td>
+                <td>$2230</td>
+              </tr>
+              <tr>
+                <th scope="row">France</th>
+                <td>20</td>
+                <td>$2680</td>
+              </tr>
+              <tr>
+                <th scope="row">Italy</th>
+                <td>Global Resort</td>
+                <td rowspan="2" class="align-middle">22</td>
+                <td>$3568</td>
+              </tr>
+              <tr>
+                <th scope="row">Germany</th>
+                <td>Cheese Cake Resort</td>
+                <td>$3568</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
     <!-- <br /><br /> -->
-    <footer>Copyright 2020. All rights revserved. Made with &#10084;</footer>
+    <footer class="text-center py-5 bg-dark text-white mx-3 mb-3">
+      Copyright 2020. All rights revserved. Made with &#10084;
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
