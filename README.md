@@ -1,4 +1,4 @@
-## My Travel Stories Websit
+## My Travel Stories Website
 [My Travel Stories](http://jwd-activity.github.io/mytravelstories/)
 
 ![Generic badge](https://img.shields.io/badge/HTML-blue.svg)
