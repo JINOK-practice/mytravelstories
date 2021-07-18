@@ -1,5 +1,5 @@
 ## My Travel Stories Website
-jwd-activity.github.io/mytravelstories/
+https://jwd-activity.github.io/mytravelstories/
 
 ## Technologies used
 ![Generic badge](https://img.shields.io/badge/HTML-blue.svg)
